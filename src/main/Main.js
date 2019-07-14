@@ -48,7 +48,7 @@ ArbitrageExecution.refreshBalances()
         logger.performance.debug(`Cores Speeds: [${os.cpus().map(cpu => cpu.speed)}] MHz`);
 
         // Allow time to read output before starting calculation cycles
-        setTimeout(calculateArbitrage, 4000);
+        setTimeout(calculateArbitrage, CONFIG.HUD.INT_STATS_TIMEOUT || 4000);
     })
     .catch(console.error);
 
