@@ -10,8 +10,9 @@ const CalculationNode = require('./CalculationNode');
 const SpeedTest = require('./SpeedTest');
 
 binance.options({
-    APIKEY: CONFIG.KEYS.API,
-    APISECRET: CONFIG.KEYS.SECRET,
+    // API and SECRET should be environment variables (e.g. export BTARB_KEYS_API="foobar123")
+    APIKEY: process.env.BTARB_KEYS_API,
+    APISECRET: process.env.BTARB_KEYS_SECRET,
     test: !CONFIG.TRADING.ENABLED
 });
 
