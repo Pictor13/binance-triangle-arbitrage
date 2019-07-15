@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "blessed": "^0.1.81",
+    "lodash": "^4.17.14",
     "node-binance-api": "^0.9.3",
     "pino": "^5.12.6",
     "pino-pretty": "^3.2.0"

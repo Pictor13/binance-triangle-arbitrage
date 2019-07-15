@@ -1,4 +1,4 @@
-const CONFIG = require('../../config/config');
+const CONFIG = require('./Config');
 
 const CalculationNode = {
 

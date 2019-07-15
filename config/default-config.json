@@ -1,0 +1,45 @@
+{
+
+    "KEYS": {
+        "API": "Export BTARB__KEYS__API env variable",
+        "SECRET": "Export BTARB__KEYS__SECRET env variable"
+    },
+
+    "INVESTMENT": {
+        "BASE": "BTC",
+        "MIN": 0.015,
+        "MAX": 0.035,
+        "STEP": 0.005
+    },
+
+    "TRADING": {
+        "ENABLED": false,
+        "EXECUTION_STRATEGY": "linear",
+        "EXECUTION_TEMPLATE": ["BUY", "SELL", "SELL"],
+        "EXECUTION_CAP": 1,
+        "TAKER_FEE": 0.00,
+        "PROFIT_THRESHOLD": 0.30,
+        "AGE_THRESHOLD": 300,
+        "WHITELIST": []
+    },
+
+    "HUD": {
+        "ENABLED": true,
+        "ARB_COUNT": 10,
+        "INT_STATS_TIMEOUT": 10000
+    },
+
+    "LOG": {
+        "LEVEL": "info",
+        "PRETTY_PRINT": true
+    },
+
+    "DEPTH": {
+        "SIZE": 10,
+        "PRUNE": false,
+        "INITIALIZATION_INTERVAL": 75
+    },
+
+    "CALCULATION_COOLDOWN": 250
+
+}

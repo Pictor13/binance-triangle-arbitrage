@@ -1,4 +1,4 @@
-const CONFIG = require('../../config/config.json');
+const CONFIG = require('./Config');
 const binance = require('node-binance-api')();
 
 const MarketCache = {

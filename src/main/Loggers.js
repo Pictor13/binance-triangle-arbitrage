@@ -1,4 +1,4 @@
-const CONFIG = require('../../config/config');
+const CONFIG = require('./Config');
 const fs = require('fs');
 const pino = require('pino');
 

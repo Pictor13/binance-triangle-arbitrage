@@ -1,4 +1,4 @@
-const CONFIG = require('../../config/config');
+const CONFIG = require('./Config');
 const logger = require('./Loggers');
 const binance = require('node-binance-api')();
 const os = require('os');
@@ -10,9 +10,8 @@ const CalculationNode = require('./CalculationNode');
 const SpeedTest = require('./SpeedTest');
 
 binance.options({
-    // API and SECRET should be environment variables (e.g. export BTARB_KEYS_API="foobar123")
-    APIKEY: process.env.BTARB_KEYS_API,
-    APISECRET: process.env.BTARB_KEYS_SECRET,
+    APIKEY: CONFIG.KEYS.API,
+    APISECRET: CONFIG.KEYS.SECRET,
     test: !CONFIG.TRADING.ENABLED
 });
 

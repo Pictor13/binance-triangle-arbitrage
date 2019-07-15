@@ -1,4 +1,4 @@
-const CONFIG = require('../../config/config');
+const CONFIG = require('./Config');
 const logger = require('./Loggers');
 const BinanceApi = require('./BinanceApi');
 const CalculationNode = require('./CalculationNode');
